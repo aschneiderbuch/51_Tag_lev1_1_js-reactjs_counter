@@ -28,6 +28,19 @@ const VerarbeitenCode = () => {
         else { setZählen(0) }
     }
 
+    // ! Szenario_2 Objekt in dem Funktionen liegen
+    const berechnenMethodenObjekt = {
+        plusRechnen: function () {
+            setZählen(zählen + 1)
+        },
+        minusRechnen: function () {
+            setZählen(zählen - 1)
+        },
+        resetErgebnis: function () {
+            setZählen(0)
+        }
+
+    }
 
     return (
 
@@ -44,7 +57,7 @@ const VerarbeitenCode = () => {
                 {/* // * 8 onClick */}
                 <button onClick={berechnen} value={-1}> - </button>
 
-                <button onClick={berechnen} value={0}> Reset </button>
+                <button onClick={berechnenMethodenObjekt.resetErgebnis} value={0}> Reset </button>
             </article>
 
         </section>
