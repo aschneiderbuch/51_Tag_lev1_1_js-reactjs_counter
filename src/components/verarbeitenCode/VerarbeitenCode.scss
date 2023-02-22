@@ -1,0 +1,32 @@
+section {
+    width: 110px;
+
+    text-align: center;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    p {
+        color: red;
+        font-size: 1.2rem;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+
+        margin: auto;
+
+        width: 50%;
+
+        button {
+            margin: 4px 0;
+
+            border-radius: 10px;
+
+            &:hover {
+                color: green;
+scale: 1.3;            }
+        }
+    }
+}
